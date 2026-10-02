@@ -1,0 +1,12 @@
+DPDFNet-2 48 kHz speech enhancement model (DPDFNet2_48k.mlpackage / DPDFNet2_48k.mlmodelc)
+
+Model and weights: DPDFNet-2 48 kHz (dpdfnet2_48khz_hr) by Ceva Inc.
+https://github.com/ceva-ip/DPDFNet
+https://huggingface.co/Ceva-IP/DPDFNet
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Modifications: the original PyTorch checkpoint (checkpoints/dpdfnet2_48khz_hr.pth) was
+converted to Core ML format (ML Program) with coremltools, as a single 10 ms streaming
+step. Linear, matmul and convolution weights are stored in float16; all other
+computation is float32. The network architecture and trained weights are otherwise
+unchanged.
